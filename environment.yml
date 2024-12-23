@@ -1,0 +1,17 @@
+name: gdrive_env #conda env create -f environment.yml
+channels:
+  - defaults
+dependencies:
+  - numpy
+  - python
+  - ipykernel #python -m ipykernel install --user --name gdrive_env --display-name "gdrive_env"
+  - pip
+  - pip:
+      - matplotlib
+      - scikit-learn
+      - pandas
+      - openpyxl
+      - jupyterlab
+      - google-api-python-client 
+      - google-auth-httplib2 
+      - google-auth-oauthlib 
